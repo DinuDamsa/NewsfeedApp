@@ -1,0 +1,7 @@
+{
+  "name": "OnlyBook-User",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
