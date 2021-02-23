@@ -35,7 +35,7 @@ public class User implements Entity<Long> {
                 ", username='" + username + '\'' +
                 ", nickname='" + nickname + '\'' +
                 ", aboutYou='" + aboutYou + '\'' +
-                ", imageUrl='" + profileImagePath + '\'' +
+                ", profileImagePath='" + profileImagePath + '\'' +
                 '}';
     }
 

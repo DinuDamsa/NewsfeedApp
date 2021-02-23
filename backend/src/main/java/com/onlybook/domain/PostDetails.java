@@ -33,7 +33,7 @@ public class PostDetails implements Entity<Long>{
                 "id=" + id +
                 ", title='" + title + '\'' +
                 ", textContent='" + textContent + '\'' +
-                ", pictureUrl='" + contentPicturePath + '\'' +
+                ", picturePath='" + contentPicturePath + '\'' +
                 '}';
     }
 
