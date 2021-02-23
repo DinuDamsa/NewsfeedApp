@@ -11,8 +11,7 @@ import javax.persistence.*;
 @AllArgsConstructor
 @javax.persistence.Entity
 @Table(name = "post_details")
-public class PostDetails implements Entity<Long>{
-
+public class PostDetails implements Entity<Long> {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
