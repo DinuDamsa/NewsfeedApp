@@ -13,7 +13,9 @@ INSERT INTO users(id, about_you, nickname, profile_image_path, username) VALUES
 (-2, 'About me', 'user', null, 'user'),
 (-3, 'Lorem ipsum it''s about March 213th the new normal you''re on mute. super-spreader event.', 'mary', null, 'maryanaP'),
 (-4, 'Lorem ipsum at least 6 feet self care four seasons total landscaping. What day is it? dumpster fire sourdough bread. Mr. Peanut K-shaped recovery storm Area 51 vote flatten the curve. Doomscrolling frontline workers COVID-19 spread.', 'Alex', null, 'AlexVonMugurel'),
-(-5, '', 'MrNobody', null, 'MrNobody13');
+(-5, '', 'MrNobody', null, 'MrNobody13'),
+(-6, 'Only 1 post user xD', 'TheOne', null, 'uvuvwevwevwe onyetenyevwe ugwemubwem ossas'),
+(-7, 'DONT USE ME', 'USELESS_USER', null, 'IAmAnUselessUser');
 
 INSERT INTO post_details(id, content_picture_path, text_content, title) VALUES
 (-1, null,'Capicola tongue sirloin rump salami.','Midsagittal'),
@@ -45,7 +47,8 @@ INSERT INTO post_details(id, content_picture_path, text_content, title) VALUES
 (-27, null,'Tenderloin shank shankle pastrami t-bone.','Rondeau swims vulnerably'),
 (-28, null,'Hamburger pig t-bone ground round, pork flank pork chop beef ribeye frankfurter filet mignon boudin tenderloin.','Waterlogged dustrag cerebrations burns mesomeres silurids'),
 (-29, null,'Chicken tail tri-tip biltong pork chop bresaola beef ribs salami, picanha spare ribs chuck jerky.','Archbishop dreamlessnesses handwheel graciously desertion'),
-(-30, null,'Chuck ham fatback bacon landjaeger andouille swine boudin.','Lexicographic interbehavioral');
+(-30, null,'Chuck ham fatback bacon landjaeger andouille swine boudin.','Lexicographic interbehavioral'),
+(-31, null,'Some random description. ', 'Random title');
 
 INSERT INTO categories(id, category_name) VALUES
 (-1, 'Animals'),
@@ -54,7 +57,9 @@ INSERT INTO categories(id, category_name) VALUES
 (-4, 'Meme'),
 (-5, 'Car'),
 (-6, 'Sports'),
-(-7, 'Music');
+(-7, 'Music'),
+(-8, 'Category with 1 post'),
+(-9, 'Unused');
 
 INSERT INTO posts(id, category_id, post_details_id, user_id) VALUES
 (-1, -3, -1, -4),
@@ -86,4 +91,5 @@ INSERT INTO posts(id, category_id, post_details_id, user_id) VALUES
 (-27, -5, -27, -2),
 (-28, -5, -28, -4),
 (-29, -6, -29, -1),
-(-30, -5, -30, -3);
+(-30, -5, -30, -3),
+(-31, -8, -31, -5);
