@@ -24,8 +24,8 @@ public class PostDetails implements Entity<Long>{
     @Column(name = "text_content")
     private String textContent;
 
-    @Column(name = "picture_content")
-    private String pictureUrl;
+    @Column(name = "content_picture_path")
+    private String contentPicturePath;
 
     @Override
     public String toString() {
@@ -33,7 +33,7 @@ public class PostDetails implements Entity<Long>{
                 "id=" + id +
                 ", title='" + title + '\'' +
                 ", textContent='" + textContent + '\'' +
-                ", pictureUrl='" + pictureUrl + '\'' +
+                ", pictureUrl='" + contentPicturePath + '\'' +
                 '}';
     }
 

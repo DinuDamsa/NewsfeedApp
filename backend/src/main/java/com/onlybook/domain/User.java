@@ -25,8 +25,8 @@ public class User implements Entity<Long> {
     @Column(name = "about_you")
     private String aboutYou;
 
-    @Column(name = "image")
-    private String imageUrl;
+    @Column(name = "profile_image_path")
+    private String profileImagePath;
 
     @Override
     public String toString() {
@@ -35,7 +35,7 @@ public class User implements Entity<Long> {
                 ", username='" + username + '\'' +
                 ", nickname='" + nickname + '\'' +
                 ", aboutYou='" + aboutYou + '\'' +
-                ", imageUrl='" + imageUrl + '\'' +
+                ", imageUrl='" + profileImagePath + '\'' +
                 '}';
     }
 
