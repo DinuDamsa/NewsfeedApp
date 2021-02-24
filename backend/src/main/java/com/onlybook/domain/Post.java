@@ -17,13 +17,13 @@ public class Post implements Entity<Long> {
     @Column(name = "id")
     private long id;
 
-    @OneToOne
+    @ManyToOne
     private User user;
 
     @OneToOne(cascade = CascadeType.ALL)
     private PostDetails postDetails;
 
-    @OneToOne
+    @ManyToOne
     private Category category;
 
     @Override
