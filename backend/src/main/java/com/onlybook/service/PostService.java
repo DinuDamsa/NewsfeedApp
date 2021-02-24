@@ -1,9 +1,9 @@
 package com.onlybook.service;
 
-import com.onlybook.domain.Post;
+import com.onlybook.domain.model.dtos.PostDTO;
 
 import java.util.List;
 
 public interface PostService {
-    List<Post> getPosts();
+    List<PostDTO> getPosts();
 }

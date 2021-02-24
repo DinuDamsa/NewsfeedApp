@@ -1,4 +1,4 @@
-package com.onlybook.domain;
+package com.onlybook.domain.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

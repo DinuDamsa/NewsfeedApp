@@ -1,4 +1,4 @@
-package com.onlybook.domain;
+package com.onlybook.domain.model;
 
 import java.io.Serializable;
 
