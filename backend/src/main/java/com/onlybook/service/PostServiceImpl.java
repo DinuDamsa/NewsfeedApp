@@ -1,5 +1,6 @@
 package com.onlybook.service;
 
+import com.onlybook.domain.exceptions.PostNotFoundException;
 import com.onlybook.domain.model.dtos.PostDTO;
 import com.onlybook.domain.utils.DtoMapper;
 import com.onlybook.repositories.PostRepository;
@@ -22,5 +23,17 @@ public class PostServiceImpl implements PostService {
                 .stream()
                 .map(DtoMapper::postToPostDTO)
                 .collect(Collectors.toList());
+    }
+
+    @Override
+    public List<PostDTO> getPostsContainingSequenceInTitle(String sequence) {
+        List<PostDTO> posts = postRepository.findAll()
+                .stream()
+                .filter(post -> post.getPostDetails().getTitle().contains(sequence))
+                .map(DtoMapper::postToPostDTO)
+                .collect(Collectors.toList());
+        if (posts.size() == 0)
+            throw new PostNotFoundException("There are no posts with this title");
+        return posts;
     }
 }
