@@ -6,4 +6,5 @@ import java.util.List;
 
 public interface PostService {
     List<PostDTO> getPosts();
+    List<PostDTO> getPostsContainingSequenceInTitle(String sequence);
 }

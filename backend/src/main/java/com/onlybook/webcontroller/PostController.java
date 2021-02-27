@@ -3,9 +3,7 @@ package com.onlybook.webcontroller;
 import com.onlybook.domain.model.dtos.PostDTO;
 import com.onlybook.service.PostService;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -20,8 +18,10 @@ public class PostController {
     }
 
     @GetMapping
-    public List<PostDTO> getPosts() {
+    public List<PostDTO> getPostsWithTitleContainingSequence(@RequestParam(value = "name", required = false) String sequence) {
         log.debug("Entered class = PostController, method = getPosts");
+        if (sequence != null)
+            return postService.getPostsContainingSequenceInTitle(sequence);
         return postService.getPosts();
     }
 }
