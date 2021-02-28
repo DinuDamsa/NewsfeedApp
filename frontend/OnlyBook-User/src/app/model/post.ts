@@ -4,7 +4,9 @@ import { PostDetails } from './post-details';
 
 export class Post {
   id: number;
-  user: User;
-  postDetails: PostDetails;
-  category: Category;
+  title: string;
+  textContent: string;
+  contentPicturePath: string;
+  userNickname: string;
+  category: string;
 }
