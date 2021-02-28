@@ -2,6 +2,7 @@ import {Post} from '../model/post';
 import {Observable} from 'rxjs';
 import {HttpClient} from '@angular/common/http';
 import {Injectable} from '@angular/core';
+import {environment} from "../../environments/environment";
 
 @Injectable({
   providedIn: 'root'
@@ -12,6 +13,6 @@ export class PostService {
   }
 
   getPosts(): Observable<Post[]> {
-    return this.httpService.get<Post[]>('http://localhost:8080/onlyBook/api/post');
+    return this.httpService.get<Post[]>(environment.baseUrl + '/post');
   }
 }
