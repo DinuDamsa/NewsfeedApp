@@ -1,0 +1,15 @@
+<ion-header>Post list</ion-header>
+<ion-content>
+<ion-list>
+  <ion-card *ngFor="let post of posts" style="margin-bottom: 25px">
+    <ion-card-content>{{post.category}}</ion-card-content>
+    <ion-card-header>
+      <ion-card-title>{{post.title}}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content><img src="../../../assets/New_york_times_square-terabass.jpg" height="200" width="400" alt="img"/></ion-card-content>
+    <ion-card-content>{{post.textContent}}</ion-card-content>
+    <ion-card-content>by {{post.userNickname}}</ion-card-content>
+  </ion-card>
+</ion-list>
+</ion-content>
+

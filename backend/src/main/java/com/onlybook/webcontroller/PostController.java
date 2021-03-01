@@ -10,6 +10,7 @@ import java.util.List;
 @Slf4j
 @RequestMapping("/post")
 @RestController
+@CrossOrigin
 public class PostController {
     private final PostService postService;
 
